@@ -1,14 +1,16 @@
 const express = require('express');
 const app = express();
 // app - active express apllication
+const reqAgeFilter = require('./middleware/middleware_age'); 
+//app.use(reqAgeFilter);
 
 //http://localhost:4000/about
-app.get('/about', (req, res) => {
+app.get('/about', reqAgeFilter, (req, res) => {
     res.send('Express application  - About')
 })
 
 //http://localhost:4000/services
-app.get('/services', (req, res) => {
+app.get('/services', reqAgeFilter, (req, res) => {
     res.send('<h2>Express application  - Services</h2>')
 })
 
@@ -34,6 +36,40 @@ app.get('/data', (req, res) => {
 app.get('/', (req, res) => {
     res.send('Express application is running..............')
 })
+
+
+
+const path = require('path');
+const publicpath = path.join(__dirname, 'public');
+app.use(express.static(publicpath));
+
+//http://localhost:4000/staticfile1
+app.get('/staticfile1', (req, res) => {
+    res.sendFile(`${publicpath}/staticfile1.html`);
+})
+
+
+//http://localhost:4000/staticfile2
+app.get('/staticfile2', (req, res) => {
+    res.sendFile(`${publicpath}/staticfile2.html`);
+})
+
+
+app.set('view engine', 'ejs');
+
+//http://localhost:4000/ejsfile1
+app.get('/ejsfile1', (req,res) => {
+    res.render('ejsfile1');
+})
+app.get('/ejsfile2', (req,res) => {
+    const data = {
+        name: 'abc',
+        city: 'delhi'
+    }
+    res.render('ejsfile2', {data});
+})
+
+
 
 
 // use - represents middleware
