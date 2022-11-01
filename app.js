@@ -4,6 +4,14 @@ const app = express();
 const reqAgeFilter = require('./middleware/middleware_age'); 
 //app.use(reqAgeFilter);
 
+const usersRoute = require('./routes/users');
+const productsRoute = require('./routes/products');
+
+
+// http://localhost:4000/users
+app.use('/users', usersRoute);
+app.use('/products ', productsRoute);
+
 //http://localhost:4000/about
 app.get('/about', reqAgeFilter, (req, res) => {
     res.send('Express application  - About')
@@ -61,6 +69,7 @@ app.set('view engine', 'ejs');
 app.get('/ejsfile1', (req,res) => {
     res.render('ejsfile1');
 })
+
 app.get('/ejsfile2', (req,res) => {
     const data = {
         name: 'abc',
