@@ -5,6 +5,7 @@ HTTP Codes - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
 express ------------------------------------
 static - to serve static files
+json - to handle all json object
 
 
 
@@ -50,6 +51,16 @@ use - middleware
 
 
 
+mongoose ------------------------------------
+connect - to connect database - 4 things - hostname, database name, username, password
+Schema - to define scema of table
+model - to define model with Schema
+
+
+mogoose model ---------------------------------
+save - save data in db
+find - fetch all db entries
+
 
 
 Templating in Express ------------------------
@@ -57,6 +68,7 @@ EJS
 PUG
 
 
+Json-parser - library
 
 
 Users

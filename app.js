@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
 // app - active express apllication
 const reqAgeFilter = require('./middleware/middleware_age'); 
 //app.use(reqAgeFilter);
@@ -81,7 +82,7 @@ app.get('/ejsfile2', (req,res) => {
 })
 
 
-
+mongoose.connect('mongodb+srv://testuser001:z9xsFuktzYAs4fMk@cluster0.2eq41.mongodb.net/siri_ecommerce?retryWrites=true&w=majority')
 
 // use - represents middleware
 // req - object from client to server
