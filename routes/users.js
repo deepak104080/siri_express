@@ -14,3 +14,12 @@ router.get('/',  (req, res) =>{
 
 
 module.exports = router;
+
+
+
+// userid
+// name
+// username
+// email
+// mobile
+// password

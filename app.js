@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const cors = require('cors');
 // app - active express apllication
 const reqAgeFilter = require('./middleware/middleware_age'); 
 //app.use(reqAgeFilter);
 
 app.use(express.json());
+app.use(cors());
 
 const usersRoute = require('./routes/users');
 const productsRoute = require('./routes/products');

@@ -159,3 +159,12 @@ mongodb - mongoose
 atlas
 
 
+
+
+
+
+API LIST
+1) All Products - http://localhost:4000/products/allproducts
+2) Add Product - http://localhost:4000/products/addproduct
+3) Category wise Product - http://localhost:4000/products/searchbycategory/{categoryname}
+4) Product Detail - http://localhost:4000/products/searchbyid/{id}
