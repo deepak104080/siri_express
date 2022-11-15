@@ -169,4 +169,60 @@ API LIST
 3) Category wise Product - http://localhost:4000/products/searchbycategory/{categoryname}
 4) Product Detail - http://localhost:4000/products/searchbyid/{id}
 
-5) Register - 
+5) Register - http://localhost:4000/users/register
+6) Login - http://localhost:4000/users/login
+
+
+
+
+
+
+
+
+
+
+------------------------------------------
+SQL - Structured Programming Language
+
+
+
+MySQL
+
+
+xamp/xamp - mysql database - phpmyadmin
+
+mysql worbench
+
+
+
+
+
+
+
+
+
+ddl - data definition language
+CREATE, DROP, ALTER, TRUNCATE
+
+
+dml - data manipulation
+INSERT, UPDATE, DELETE
+
+
+dcl - data control
+GRANT, REVOKE
+
+
+tcl - transaction control
+COMMIT, ROLLBACK
+
+
+dql - data query
+SELECT
+
+
+SIRI_ECOMMERCE - database
+products - table (id, title, image, description)
+users - table (id, email, password)
+orders
+wishlist
