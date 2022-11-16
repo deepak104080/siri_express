@@ -226,3 +226,11 @@ products - table (id, title, image, description)
 users - table (id, email, password)
 orders
 wishlist
+
+
+
+
+Installation - https://www.youtube.com/watch?v=iw1WX7eIWNY&list=PLNPSRIjTB5SeiwELWInrA5Ri7YXrdhe4G&index=218
+
+https://dev.mysql.com/downloads/
+
