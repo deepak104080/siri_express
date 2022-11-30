@@ -138,3 +138,22 @@
 
 -- PRAGMA table_info(products);
 -- ALTER TABLE products RENAME TO new_products
+
+
+
+
+-- FOCUS ON JOINS and SubQueries
+
+-- CREATE TABLE users (userid VARCHAR(100) , name VARCHAR(100), email VARCHAR (200), mobile VARCHAR (100), password VARCHAR (100) );
+
+-- ALTER TABLE users ADD PRIMARY KEY (email);
+-- ALTER TABLE users ADD UNIQUE KEY (mobile);
+-- ALTER TABLE users ADD UNIQUE KEY (userid);
+
+-- INSERT INTO users (userid, name, email, mobile, password) VALUES ('1', 'deepak', 'deepak123@gmail.com', '1231231231', '123456');
+
+-- INSERT INTO users (userid, name, email, mobile, password) VALUES ('2', 'shekhar', 'shekhar07@gmail.com', '1879645783', '1547');
+
+-- INSERT INTO users (userId, name, email, mobile, password) VALUES ('3', 'sidhartha', 'sid@gmail.com', '8909743445', 'Odisha')
+
+
